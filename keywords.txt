@@ -47,55 +47,6 @@ buttonPlus	KEYWORD1
 buttonZLeft	KEYWORD1
 buttonZRight	KEYWORD1
 
-## DJ Table
-crossfadeSlider	KEYWORD1
-effectDial	KEYWORD1
-stickX	KEYWORD1
-stickY	KEYWORD1
-rightDJTable	KEYWORD1
-leftDJTable	KEYWORD1
-euphoriaButton	KEYWORD1
-plusButton	KEYWORD1
-minusButton	KEYWORD1
-leftGreenButton	KEYWORD1
-leftRedButton	KEYWORD1
-leftBlueButton	KEYWORD1
-rightGreenButton	KEYWORD1
-rightRedButton	KEYWORD1
-rightBlueButton	KEYWORD1
-
-## Drawsome
-penXPosition	KEYWORD1
-penYPosition	KEYWORD1
-penPressure	KEYWORD1
-penContact	KEYWORD1
-
-## Drums
-stickX	KEYWORD1
-stickY	KEYWORD1
-minusButton	KEYWORD1
-plusButton	KEYWORD1
-orangeDrum	KEYWORD1
-redDrum	KEYWORD1
-yellowDrum	KEYWORD1
-greenDrum	KEYWORD1
-blueDrumm	KEYWORD1
-bassPedal	KEYWORD1
-
-## Guitar
-stickX	KEYWORD1
-stickY	KEYWORD1
-whammyBar	KEYWORD1
-plusButton	KEYWORD1
-minusButton	KEYWORD1
-greenButton	KEYWORD1
-redButton	KEYWORD1
-yellowButton	KEYWORD1
-blueButton	KEYWORD1
-orangeButton	KEYWORD1
-strumUp	KEYWORD1
-strumDown	KEYWORD1
-
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
@@ -144,59 +95,6 @@ getButtonPlus	KEYWORD2
 getButtonZLeft	KEYWORD2
 getButtonZRight	KEYWORD2
 
-# DJ Table
-getCrossfadeSlider	KEYWORD2
-getEffectDial	KEYWORD2
-getStickX	KEYWORD2
-getStickY	KEYWORD2
-getRightDJTable	KEYWORD2
-getLeftDJTable	KEYWORD2
-getEuphoriaButton	KEYWORD2
-getPlusButton	KEYWORD2
-getMinusButton	KEYWORD2
-getLeftGreenButton	KEYWORD2
-getLeftRedButton	KEYWORD2
-getLeftBlueButton	KEYWORD2
-getRightGreenButton	KEYWORD2
-getRightRedButton	KEYWORD2
-getRightBlueButton	KEYWORD2
-
-# Drawsome
-getPenXPosition	KEYWORD2
-getPenYPosition	KEYWORD2
-getPenPressure	KEYWORD2
-getPenContact	KEYWORD2
-
-# Drums
-getStickX	KEYWORD2
-getStickY	KEYWORD2
-getSoftnessDataFor	KEYWORD2
-getSoftness	KEYWORD2
-getHighHatDataFlag	KEYWORD2
-getSoftnessDataFlag	KEYWORD2
-getMinusButton	KEYWORD2
-getPlusButton	KEYWORD2
-getOrangeDrum	KEYWORD2
-getRedDrum	KEYWORD2
-getYellowDrum	KEYWORD2
-getGreenDrum	KEYWORD2
-getBlueDrumm	KEYWORD2
-getBassPedal	KEYWORD2
-
-# Guitar
-getStickX	KEYWORD2
-getStickY	KEYWORD2
-getWhammyBar	KEYWORD2
-getPlusButton	KEYWORD2
-getMinusButton	KEYWORD2
-getGreenButton	KEYWORD2
-getRedButton	KEYWORD2
-getYellowButton	KEYWORD2
-getBlueButton	KEYWORD2
-getOrangeButton	KEYWORD2
-getStrumUp	KEYWORD2
-getStrumDown	KEYWORD2
-
 #######################################
 # Instances (KEYWORD2)
 #######################################
@@ -207,8 +105,4 @@ getStrumDown	KEYWORD2
 
 NUNCHUCK	LITERAL1
 WIICLASSIC	LITERAL1
-GuitarHeroController	LITERAL1
-GuitarHeroWorldTourDrums	LITERAL1
-DrumController	LITERAL1
-DrawsomeTablet	LITERAL1
 Unknown	LITERAL1
