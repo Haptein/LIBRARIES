@@ -390,26 +390,11 @@ void Accessory::printInputs(Stream& stream) {
 	case WIICLASSIC:
 		printInputsClassic(stream);
 		break;
-	case GuitarHeroController:
-		printInputsGuitar(stream);
-		break;
-	case GuitarHeroWorldTourDrums:
-		printInputsDrums(stream);
-		break;
-	case DrumController:
-		printInputsDrums(stream);
-		break;
-	case DrawsomeTablet:
-		printInputsDrawsome(stream);
-		break;
-	case Turntable:
-		printInputsDj(stream);
-		break;
 	case NUNCHUCK:
 		printInputsNunchuck(stream);
 		break;
 	default:
-		stream.println("Unknown controller!");
+		stream.println("Not supported controller!");
 		break;
 
 	}
@@ -420,21 +405,6 @@ uint8_t * Accessory::getValues(){
 	case WIICLASSIC:
 		getValuesClassic(values);
 		break;
-	case GuitarHeroController:
-		getValuesGuitar(values);
-		break;
-	case GuitarHeroWorldTourDrums:
-		getValuesDrums(values);
-		break;
-	case DrumController:
-		getValuesDrums(values);
-		break;
-	case DrawsomeTablet:
-		getValuesDrawsome(values);
-		break;
-	case Turntable:
-		getValuesDj(values);
-		break;
 	case NUNCHUCK:
 	default:
 		getValuesNunchuck(values);
@@ -443,4 +413,3 @@ uint8_t * Accessory::getValues(){
 	}
 	return values;
 };
-

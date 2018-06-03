@@ -4,14 +4,8 @@
 #include "Arduino.h"
 
 //
-
 #include <Classic.h>
-#include <DJTable.h>
 #include <Nunchuck.h>
-
-#include <Drawsome.h>
-#include <Guitar.h>
-#include <Drums.h>
 
 #if defined(ARDUINO_ARCH_ESP32)
 //#include "ESP32Servo.h"
@@ -124,29 +118,6 @@ public:
 	int getButtonZRight();
 	void printInputsClassic(Stream& stream = Serial);
 	void getValuesClassic(uint8_t *values);
-	//DJ table
-	void printInputsDj(Stream& stream = Serial);
-	void getValuesDj(uint8_t * values);
-
-	int getCrossfadeSlider();
-	int getEffectDial();
-
-	int getStickX();
-	int getStickY();
-
-	int getRightDJTable();
-	int getLeftDJTable();
-
-	int getEuphoriaButton();
-	int getPlusButton();
-	int getMinusButton();
-
-	int getLeftGreenButton();
-	int getLeftRedButton();
-	int getLeftBlueButton();
-	int getRightGreenButton();
-	int getRightRedButton();
-	int getRightBlueButton();
 	//Nunchuck functions
 	void printInputsNunchuck(Stream& stream = Serial);
 	void getValuesNunchuck(uint8_t * values);
@@ -162,56 +133,7 @@ public:
 
 	boolean getButtonC();
 	boolean getButtonZ();
-	//Gutar functions
-	void printInputsGuitar(Stream& stream = Serial);
-	void getValuesGuitar(uint8_t * values);
 
-	int getStickXGuitar();
-	int getStickYGuitar();
-	int getWhammyBar();
-
-	int getPlusButtonGuitar();
-	int getMinusButtonGuitar();
-
-	int getGreenButton();
-	int getRedButton();
-	int getYellowButton();
-	int getBlueButton();
-	int getOrangeButton();
-
-	int getStrumUp();
-	int getStrumDown();
-	//drums functions
-	void printInputsDrums(Stream& stream = Serial);
-	void getValuesDrums(uint8_t * values);
-
-	int getStickXDrums();
-	int getStickYDrums();
-
-	int getSoftnessDataFor();
-	int getSoftness();
-	int getHighHatDataFlag();
-	int getSoftnessDataFlag();
-
-	int getMinusButtonDrums();
-	int getPlusButtonDrums();
-
-	int getOrangeDrum();
-	int getRedDrum();
-	int getYellowDrum();
-	int getGreenDrum();
-	int getBlueDrumm();
-	int getBassPedal();
-	//drawsome
-	void printInputsDrawsome(Stream& stream = Serial);
-	void getValuesDrawsome(uint8_t * values);
-
-	int getPenXPosition();
-	int getPenYPosition();
-	int getPenPressure();
-	int getPenContact();
-
-	void initBytesDrawsome();
 
 protected:
 	bool _encrypted;
