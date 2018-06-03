@@ -47,11 +47,7 @@ typedef enum _controllertype {
 } ControllerType;
 
 class Accessory: public Classic,
-		public DJTable,
-		public Nunchuck,
-		public Drawsome,
-		public Drums,
-		public Guitar {
+		public Nunchuck {
 public:
 	Accessory();
 	static void reset();
