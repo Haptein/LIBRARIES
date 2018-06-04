@@ -18,6 +18,7 @@ class Nunchuck
 public:
 	//Nunchuck();
 	virtual void printInputsNunchuck(Stream& stream = Serial);
+  virtual void printValuesNunchuck(Stream& stream = Serial);
 	virtual void getValuesNunchuck(uint8_t * values);
 
 	virtual int getJoyX();

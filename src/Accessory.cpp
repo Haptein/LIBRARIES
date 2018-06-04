@@ -266,9 +266,6 @@ void Accessory::begin() {
 
 	initBytes();
 	identifyController();
-	if(getControllerType()==DrawsomeTablet){
-		initBytesDrawsome();
-	}
 	delay(100);
 	_burstRead();
 	delay(100);
@@ -399,6 +396,23 @@ void Accessory::printInputs(Stream& stream) {
 
 	}
 }
+
+void Accessory::printValues(Stream& stream) {
+	switch(getControllerType()){
+	case WIICLASSIC:
+		//printValuesClassic(stream);
+		break;
+	case NUNCHUCK:
+		printValuesNunchuck(stream);
+		break;
+	default:
+		stream.println("Not supported controller!");
+		break;
+	}
+}
+
+
+
 
 uint8_t * Accessory::getValues(){
 	switch(getControllerType()){

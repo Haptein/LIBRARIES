@@ -47,7 +47,7 @@ typedef enum _controllertype {
 } ControllerType;
 
 class Accessory: public Classic,
-		public Nunchuck {
+		public Nunchuck{
 public:
 	Accessory();
 	static void reset();
@@ -57,6 +57,7 @@ public:
 	void setDataArray(uint8_t data[6]);
 
 	void printInputs(Stream& stream = Serial);
+  void printValues(Stream& stream = Serial);
 
 	void begin();
 	boolean readData();
@@ -116,6 +117,7 @@ public:
 	void getValuesClassic(uint8_t *values);
 	//Nunchuck functions
 	void printInputsNunchuck(Stream& stream = Serial);
+  void printValuesNunchuck(Stream& stream = Serial);
 	void getValuesNunchuck(uint8_t * values);
 
 	int getJoyX();

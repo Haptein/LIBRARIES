@@ -57,6 +57,7 @@ void  Accessory::getValuesNunchuck( uint8_t * values){
 		}
 	}
 }
+
 void Accessory::printInputsNunchuck(Stream& stream) {
 	char st[100];
 
@@ -78,3 +79,20 @@ void Accessory::printInputsNunchuck(Stream& stream) {
 	stream.println();
 }
 
+void Accessory::printValuesNunchuck(Stream& stream) {
+  char st[50];
+  char roll[10];
+  char pitch[10];
+
+  //Arduino does not support floats in sprintf
+  dtostrf(getRollAngle(),7, 2, roll);
+  dtostrf(getPitchAngle(),7, 2, pitch);
+
+  sprintf(st,
+	        "%4d, %4d, %s, %s, %4d, %4d, %4d, %1d, %1d",
+	        getJoyX(), getJoyY(), roll, pitch,
+          getAccelX(), getAccelY(), getAccelZ(),
+          getButtonC(), getButtonZ());
+
+  stream.println(st);
+}
